@@ -68,7 +68,7 @@ class TTT(Tk):
            # n = ai.phase1(self.board, self.turn)
             n = event.widget.num
         else:
-            n = ai.phase4(self.board, self.turn)
+            n = ai.alphabeta(self.board, self.turn)
             #n = event.widget.num
         if self.board[n] != 0:
             return
